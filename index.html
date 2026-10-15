@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="覃帅 · 金融 × AI 产品经理 / 数据分析，正在看机会。14 年财富管理 + 自建 AI 投研数据分析平台。">
+<title>覃帅 · 金融 × AI 产品经理 / 数据分析</title>
+<style>
+  :root{
+    --navy:#102a43; --navy2:#163f63; --teal:#168c78; --amber:#c8a24a;
+    --paper:#f7f9fc; --white:#fff; --ink:#243b53; --muted:#627d98; --line:#d9e2ec; --soft:#eef4f8;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",Arial,sans-serif;font-size:17px;line-height:1.72}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .shell{width:min(1120px,calc(100% - 44px));margin:auto}
+  .topbar{position:sticky;top:0;z-index:20;background:rgba(247,249,252,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(217,226,236,.8)}
+  .nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-weight:900;letter-spacing:.04em;color:var(--navy);font-size:20px}
+  .brand i{color:var(--teal);font-style:normal}
+  .navlinks{display:flex;gap:24px;align-items:center}
+  .navlinks a{font-weight:700;font-size:15px;color:var(--navy2)}
+  .navlinks .contact{background:var(--navy);color:#fff;padding:9px 17px;border-radius:999px}
+  .hero{padding:80px 0 64px;display:grid;grid-template-columns:1.4fr .6fr;gap:56px;align-items:center}
+  .eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:900;color:var(--teal)}
+  h1,h2,h3,p{margin-top:0}
+  .hero h1{font-size:clamp(42px,6vw,72px);line-height:1.08;letter-spacing:-.04em;color:var(--navy);margin:16px 0 22px}
+  .hero h1 span{color:var(--teal)}
+  .lead{font-size:20px;line-height:1.75;max-width:720px;color:#486581}
+  .promise{border-left:4px solid var(--amber);padding:6px 0 6px 18px;margin:26px 0;color:var(--navy);font-weight:800;font-size:19px}
+  .openrow{display:inline-flex;align-items:center;gap:9px;margin:4px 0 0;padding:9px 16px;background:#e6f6f2;border:1px solid #b8e0d6;border-radius:999px;font-weight:800;color:var(--teal);font-size:15px}
+  .openrow .dot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px rgba(22,140,120,.15)}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0}
+  .chip{padding:7px 13px;border:1px solid var(--line);background:#fff;border-radius:999px;font-size:14px;font-weight:800;color:var(--navy2)}
+  .sidecard{background:var(--navy);border-radius:28px;padding:26px;box-shadow:0 18px 50px rgba(16,42,67,.12)}
+  .sidecard h3{color:#fff;font-size:20px;margin-bottom:14px}
+  .sidecard .big{color:var(--amber);font-size:40px;font-weight:900;line-height:1}
+  .sidecard p{color:#d9e2ec;font-size:15px;margin:8px 0 0}
+  .section{padding:72px 0;border-top:1px solid var(--line)}
+  .section-head h2{font-size:clamp(30px,4vw,46px);line-height:1.14;color:var(--navy);letter-spacing:-.02em}
+  .section-head>p{font-size:18px;color:var(--muted);max-width:760px}
+  .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+  .cap{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 24px rgba(16,42,67,.04)}
+  .cap b{display:block;color:var(--teal);font-size:13px;letter-spacing:.08em;margin-bottom:14px}
+  .cap h3{font-size:20px;line-height:1.35;margin-bottom:10px}
+  .cap p{font-size:15px;color:var(--muted);margin:0}
+  .stack{margin-top:36px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px}
+  .stack b{display:block;color:var(--teal);font-size:13px;letter-spacing:.08em;margin-bottom:12px}
+  .stack p{font-size:16px;color:var(--navy2);margin:0}
+  .disclaimer{margin-top:26px;font-size:14px;color:var(--muted);border-left:3px solid var(--amber);padding-left:14px}
+  .bg-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+  .bg{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+  .bg b{display:block;color:var(--navy);font-size:16px;margin-bottom:8px}
+  .bg p{font-size:15px;color:var(--muted);margin:0}
+  footer{padding:56px 0;border-top:1px solid var(--line);text-align:center;color:var(--muted)}
+  footer .contact{display:inline-block;margin-top:14px;background:var(--navy);color:#fff;padding:12px 22px;border-radius:999px;font-weight:800}
+  @media(max-width:820px){
+    .hero{grid-template-columns:1fr;padding:52px 0}
+    .cap-grid{grid-template-columns:1fr}
+    .bg-grid{grid-template-columns:1fr}
+    .navlinks a:not(.contact){display:none}
+  }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="shell nav">
+      <span class="brand">覃帅 <i>·</i> 金融×AI</span>
+      <div class="navlinks">
+        <a href="#project">重点项目</a>
+        <a href="#background">背景</a>
+        <a class="contact" href="#contact">联系我</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="shell hero">
+    <div>
+      <div class="eyebrow">Finance × AI · Data</div>
+      <h1>把金融业务和<br><span>数据分析</span>串起来</h1>
+      <p class="lead">14 年财富管理 + 银行产品经理，自己搭了一套 AI 投研数据分析平台，把财报、研报这些非结构化的金融文档，转成结构化、可查询、可视化的数据，替分析师省掉翻原始资料的功夫。</p>
+      <div class="promise">金融业务 × 数据分析 × 大模型应用</div>
+      <div class="openrow"><span class="dot"></span>正在看机会 · 金融 × AI 产品经理 / 数据分析 · Base 北京</div>
+      <div class="chips">
+        <span class="chip">金融业务</span>
+        <span class="chip">财富管理</span>
+        <span class="chip">数据分析</span>
+        <span class="chip">财报分析</span>
+        <span class="chip">研报解读</span>
+        <span class="chip">知识图谱</span>
+        <span class="chip">大模型应用</span>
+      </div>
+    </div>
+    <aside class="sidecard">
+      <h3>一句话定位</h3>
+      <div class="big">14 年</div>
+      <p>金融业务沉淀，加上自己动手搭 AI 数据平台的落地能力。</p>
+    </aside>
+  </header>
+
+  <section class="section" id="project">
+    <div class="shell">
+      <div class="section-head">
+        <h2>重点项目 ·<br>AI 投研数据分析平台</h2>
+        <p>投研里最耗时的不是下判断，是把财报、研报这些散落在 PDF 里的信息，整理成能用的数据。这套平台把这一步自动化了。</p>
+      </div>
+
+      <div class="cap-grid">
+        <div class="cap">
+          <b>01 · 财报</b>
+          <h3>财报结构化分析</h3>
+          <p>把 PDF、扫描版财报转成结构化的三大报表（资产负债 / 利润 / 现金流），按需查询、横向对比。</p>
+        </div>
+        <div class="cap">
+          <b>02 · 研报</b>
+          <h3>研报智能解读</h3>
+          <p>用 NLP 抽取研报里的核心观点、评级、风险点，自动生成摘要，不用从头读到尾。</p>
+        </div>
+        <div class="cap">
+          <b>03 · 图谱</b>
+          <h3>行业知识图谱</h3>
+          <p>把公司、行业、上下游的关系组织成知识图谱，做关联分析，看清业务之间的连接。</p>
+        </div>
+        <div class="cap">
+          <b>04 · 问答</b>
+          <h3>智能问答（RAG）</h3>
+          <p>向量检索 + 大模型，直接问"某公司最近财报怎么样"，给出有出处的答案。</p>
+        </div>
+        <div class="cap">
+          <b>05 · 看板</b>
+          <h3>数据看板</h3>
+          <p>多维度可视化看板，把结构化出来的数据一眼看明白，不用自己拼表。</p>
+        </div>
+        <div class="cap">
+          <b>06 · 文档</b>
+          <h3>复杂文档解析</h3>
+          <p>处理复杂版式的 PDF、扫描件、表格，把难读的原始文档变成干净可用的数据。</p>
+        </div>
+      </div>
+
+      <div class="stack">
+        <b>技术栈</b>
+        <p>Dify 工作流 · DeepSeek · 向量检索（pgvector + bge-m3）· 文档解析（MinerU）· React + ECharts</p>
+      </div>
+
+      <p class="disclaimer">本平台为个人项目实践，数据来自公开数据源，用于验证数据分析与产品落地能力；不构成任何投资建议。</p>
+    </div>
+  </section>
+
+  <section class="section" id="background">
+    <div class="shell">
+      <div class="section-head">
+        <h2>背景</h2>
+        <p>金融业务是底子，AI 落地是手上能打的牌。</p>
+      </div>
+      <div class="bg-grid">
+        <div class="bg">
+          <b>财富管理 · 14 年</b>
+          <p>宜信 / 恒天 / 五道 / 银行。固收、私募股权、类固收产品线，从产品到客户全链路。</p>
+        </div>
+        <div class="bg">
+          <b>中电金信（派驻国有银行）· 产品经理 · 2025.11–2026.07</b>
+          <p>银行产品需求分析：到期产品查询、到期开放日历等板块，接分行需求 → 分析 → 对接开发落地。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="shell">
+      <div>想聊金融行业里的 AI 落地，或换个地方一起做事，欢迎联系。</div>
+      <span class="contact"><a href="mailto:857093428@qq.com">857093428@qq.com</a> · <a href="tel:15801125206">15801125206</a></span>
+    </div>
+  </footer>
+</body>
+</html>
